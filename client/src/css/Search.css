@@ -1,0 +1,37 @@
+.search-container {
+    margin: 2rem auto; 
+    text-align: center;
+    padding: 0 1rem; 
+    margin-top: 8rem;
+    margin-bottom: 18rem;
+    /* background-color: white; */
+}
+
+.search-container form {
+    margin-bottom: 1rem;
+}
+
+.search-container form input {
+    padding: 0.5rem 1rem;
+    width: 100%; 
+    max-width: 400px; 
+    border-radius: 25px;
+    box-sizing: border-box; 
+}
+
+.item-numbers {
+    background-color: white;
+    padding: 1rem; 
+    box-sizing: border-box; 
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .search-container form input {
+        max-width: 100%; 
+    }
+    
+    .item-numbers {
+        padding: 1rem; 
+    }
+}

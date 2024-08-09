@@ -1,0 +1,119 @@
+/* Default Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: #F3F4F4;
+    padding: 2rem;
+    gap: 2rem;
+    padding-top: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 12rem;
+    border-radius: 10px;
+    
+}
+
+.grid-item-1 {
+    background-color: #FEFBF0;
+    padding: 2rem;
+}
+
+.item {
+    font-weight: 600;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: #FFF;
+    transition: background-color 0.3s;
+}
+
+.item:hover {
+    cursor: pointer;
+    background-color: #E0E0E0;
+}
+
+.item.active {
+    background-color: #D1E8E4;
+    color: #32ADE6;
+}
+
+.grid-item-2 {
+    background-color: white;
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #DDD;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #F3F4F4;
+}
+
+.edit-cell {
+    color: blue;
+    cursor: pointer;
+}
+
+.edit-cell:hover {
+    color: darkblue;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .grid-item-1, .grid-item-2 {
+        padding: 1rem;
+    }
+
+    .item {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .item {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid-container {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        padding: 1rem;
+    }
+
+    .item {
+        font-size: 0.7rem;
+        padding: 6px;
+    }
+
+    table {
+        font-size: 0.8rem;
+    }
+
+    th, td {
+        padding: 4px;
+    }
+}

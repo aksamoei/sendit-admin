@@ -1,0 +1,31 @@
+.nav-link{
+    text-decoration: none;
+    margin-right: 2rem;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.nav-link:hover{
+    color: black;
+    background-color: white;
+}
+
+.nav-link.active{
+    color: black;
+    background-color: white;
+}
+
+.logout{
+    text-decoration: none;
+    color: black;
+    padding: 0.4rem;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.logout:hover{
+    background-color: white;
+    border-radius: 10px;
+}
+
